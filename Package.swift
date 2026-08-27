@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/voyagegroup/FluctSDK-iOS-Swift-Package.git",
-            exact: "6.43.7"
+            exact: "6.44.0"
         ),
         .package(
             url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git",
@@ -28,6 +28,7 @@ let package = Package(
                 .product(name: "FluctSDK", package: "FluctSDK-iOS-Swift-Package"),
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package")
             ],
+            path: "Sources/MaxFluctAdapter",
             publicHeadersPath: "include"
         ),
     ]
